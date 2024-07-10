@@ -1,0 +1,94 @@
+@import "../../styles/variables.scss";
+
+.home{
+    margin-bottom: 4rem;
+}
+
+.home__header{
+    font-size: 2rem;
+    font-weight: 600;
+    color: $green;
+    margin-bottom: 1rem;
+}
+
+.home__title{
+    /* overflow-x: hidden; */
+    width: 650px;
+    height: 5.5rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    font-weight: 900;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1;
+    color: $white;
+}
+
+.home__text{
+    width: 30rem;
+    color: $grey;
+    font-weight: 300;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.email_me{
+    padding: .5rem 1rem;
+    background-color: $green;
+    font-weight: 600;
+    color: $white;
+}
+
+.download__cv{
+
+    &__span{
+        font-size: 1.3rem;
+        color: $grey;
+        margin-top: .5rem;
+    }
+    &__p{
+        color: $grey;
+        font-size: 1.1rem;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .home__title{
+        width: 500px;
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .home__title{
+        width: 400px;
+        font-size: 3rem;
+        height: 4rem;
+    }
+    .home__header{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .home__title{
+        width: 270px;
+        font-size: 2rem;
+        height: 3rem;
+    }
+    .home__header{
+        font-size: 1.5rem;
+    }
+    .home__text{
+        width: 20rem;
+        font-size: .9rem;
+    }
+    .download__cv{
+
+    &__span{
+        font-size: 1rem;
+    }
+    &__p{
+        font-size: 1.1rem;
+    }
+}
+}

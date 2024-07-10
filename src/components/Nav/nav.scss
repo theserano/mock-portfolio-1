@@ -1,0 +1,61 @@
+@import "../../styles/variables.scss";
+
+.nav{
+    margin-bottom: 5rem;
+}
+
+.nav__logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $white;
+    display: flex;
+    align-items: baseline;
+    gap: .2rem;
+
+    &__dot {
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: $green;
+        border-radius: 50%;
+    }
+}
+
+.nav__links{
+    gap: 4rem;
+    align-items: center;
+    &__each{
+        font-weight: 500;
+        font-size: .9rem;
+        color: $white;
+        transition: ease-in-out 300ms all;
+        cursor: pointer;
+    }
+    &__each:hover{
+        color: $green;
+    }
+}
+
+.Contact{
+    border: 1px solid $green;
+    padding: .5rem .7rem;
+
+}
+
+@media screen and (max-width: 560px) {
+    .nav{
+        flex-direction: column;
+
+        &__links{
+            gap: 1rem;
+
+            &__each{
+                font-weight: 400;
+                font-size: .8rem;
+            }
+        }
+    }
+    .Contact{
+        padding: .3rem;
+    }
+}
