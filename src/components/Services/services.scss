@@ -1,0 +1,65 @@
+@import "../../styles/variables.scss";
+
+.services{
+    margin-bottom: 10rem;
+}
+
+.services__top{
+    margin-bottom: 2rem;
+
+    &__header{
+        font-size: 3rem;
+        font-weight: 900;
+        color: $white;
+        width: 30rem;
+    }
+
+    &__right{
+        p{
+            color: $grey;
+            width: 20rem;
+        }
+    }
+}
+
+// .services__bottom{
+//     margin-bottom: 5rem;
+// }
+
+@media screen and (max-width: 1050px) {
+    .services__top{
+        &__header{
+            font-size: 2.5rem;
+            width: 25rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .services__bottom{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .services__top{
+        flex-direction: column;
+        gap: 3rem;
+
+        &__header{
+            font-size: 2rem;
+            width: 20rem;
+            align-self: flex-start;
+        }
+
+        &__right{
+            align-self: flex-end;
+        }
+    }
+    .services__bottom{
+        justify-content: center;
+    }
+}
+
+// 304 204

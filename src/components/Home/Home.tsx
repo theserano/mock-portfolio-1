@@ -14,7 +14,6 @@ const Home = ({}: Props) => {
   const updateWidth = () => {
     if (textRef.current) {
       setTextWidth(textRef.current.offsetWidth);
-      console.log(textRef.current.offsetWidth, textWidth);
     }
   };
 
@@ -36,9 +35,6 @@ const Home = ({}: Props) => {
         whileInView={{
           y: 0,
           opacity: 1,
-        }}
-        transition={{
-          delay: 1,
         }}
         className="home__header"
       >
@@ -70,7 +66,6 @@ const Home = ({}: Props) => {
         className="home__text"
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ delay: 1 }}
       >
         I'm from Singapore and I have been working as a Product Designer for
         more than 7 years. I've worked for a Hanziree company Pabloo as a

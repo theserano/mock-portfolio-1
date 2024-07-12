@@ -1,0 +1,70 @@
+@import "../../../styles/variables.scss";
+
+.card{
+    background-color: $light-dark;
+    max-width: 25rem;
+    padding: 4rem 2rem;
+    overflow: hidden;
+    border: 5px solid $green;
+    border-style: none none solid none;
+
+    &__image{
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        z-index: 1;
+        margin-bottom: 2rem;
+
+        &__main{
+            position: relative;
+            width: 2rem;
+            height: 2rem;
+            z-index: 2;
+        }
+
+        &__circle{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: $green;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            z-index: 1;
+        }
+    }
+
+    &__title{
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: $white;
+    }
+
+    &__text{
+        color: $grey;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .card{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .card {
+        width: 19rem;
+        height: 19rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card{
+        width: 15rem;
+        padding: 2rem;
+
+        &__title{
+            font-size: 1.1rem;
+        }
+    }
+}
