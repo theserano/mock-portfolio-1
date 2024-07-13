@@ -4,6 +4,8 @@ import Nav from "./components/Nav/Nav"
 import Home from "./components/Home/Home"
 import Services from "./components/Services/ServicesSection"
 import Recent from "./components/Recents/Recents"
+import Contact from "./components/Contact/Contact"
+import Footer from "./components/Footer/Footer"
 
 
 const App = () => {
@@ -18,6 +20,10 @@ const App = () => {
       <Services />
       {/* recent */}
       <Recent />
+      {/* contact */}
+      <Contact />
+      {/* footer */}
+      <Footer />
     </div>
   )
 }

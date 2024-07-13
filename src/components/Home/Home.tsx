@@ -29,7 +29,7 @@ const Home = ({}: Props) => {
   useEffect(() => {setMainWidth(textWidth)}, [textWidth])
 
   return (
-    <motion.div className="home container mx-auto px-4">
+    <motion.div className="home container mx-auto px-2">
       <motion.h1
         initial={{ y: -100, opacity: 0 }}
         whileInView={{

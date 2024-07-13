@@ -10,7 +10,7 @@ type Props = {
 
 const Nav = ({ items }: Props) => {
   return (
-    <motion.div className="container mx-auto nav flex justify-between items-center py-4 px-4">
+    <motion.div className="container mx-auto nav flex justify-between items-center py-4 px-2">
       <motion.div className="nav__logo">
         <a href="#Home">Alifreza</a>
         <motion.span

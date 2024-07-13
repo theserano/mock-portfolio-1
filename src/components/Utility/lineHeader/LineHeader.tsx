@@ -14,9 +14,9 @@ const LineHeader = ({ text }: lineHeaderTypes) => {
       }}
       whileInView={{
         y: 0,
-        opacity: 1,
+        opacity: [0, 1],
       }}
-      transition={{ delay: 1.5 }}
+      transition={{ delay: 1 }}
       className="line_header"
     >
       <span className="line_header_line"></span>

@@ -53,17 +53,24 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .home__title{
+        width: 450px;
+        height: 4rem;
+        font-size: 3.5rem;
+    }
+}
 @media screen and (max-width: 700px) {
     .home__title{
-        width: 500px;
-        font-size: 4rem;
+        width: 450px;
+        font-size: 3rem;
     }
 }
 @media screen and (max-width: 600px) {
     .home__title{
         width: 400px;
-        font-size: 3rem;
-        height: 4rem;
+        height: 3rem;
+        font-size: 2.5rem;
     }
     .home__header{
         font-size: 1.5rem;
@@ -72,8 +79,8 @@
 @media screen and (max-width: 500px) {
     .home__title{
         width: 270px;
+        height: 2.5rem;
         font-size: 2rem;
-        height: 3rem;
     }
     .home__header{
         font-size: 1.5rem;

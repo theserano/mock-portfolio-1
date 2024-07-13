@@ -1,1 +1,65 @@
 @import ".../../../../styles/variables.scss";
+
+.recent{
+    background-color: $light-dark;
+    padding: 5rem 0rem;
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 3rem;
+
+        &__left{
+            flex-grow: 1;
+            h5{
+                margin-bottom: 1rem;
+            }
+            h1{
+                font-size: 2.3rem;
+                font-weight: 900;
+                line-height: 1;
+                color: $white;
+            }
+        }
+
+        &__right{
+            button{
+                border: 1px solid $green;
+                padding: .5rem;
+                font-weight: 600;
+                font-size: .9rem;
+                color: $white;
+            }
+        }
+    }
+
+    &__projects{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .recent{
+        &__top{
+            flex-direction: column;
+            &__left{
+                align-self: flex-start;
+            }
+            &__right{
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .recent{
+        &__projects{
+            grid-template-columns: 100%;
+        }
+    }
+}

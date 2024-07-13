@@ -25,7 +25,7 @@ const Services = ({}: Props) => {
   }, [])
 
   return (
-    <motion.div className="services container mx-auto px-4">
+    <motion.div className="services container mx-auto px-2">
       <motion.div className="services__top flex justify-between items-center">
         <motion.h1
           initial={{
