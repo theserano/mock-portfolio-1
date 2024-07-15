@@ -89,6 +89,7 @@ const Home = ({}: Props) => {
             <LuDownload />
           </motion.span>
           <motion.p
+            style={{cursor: "pointer"}}
             animate={{
               scale: isHovered ? 1.05 : 1,
               opacity: isHovered ? 1 : 0.5,
